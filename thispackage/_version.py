@@ -1,0 +1,6 @@
+__author__ = "First Last"
+__copyright__ = "202x, First Last"
+__email__ = "mail@example.com"
+__license__ = "GPL3"
+__title__ = "thispackage-name"
+__version__ = "0.0.0"
