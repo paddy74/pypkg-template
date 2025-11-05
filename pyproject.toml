@@ -31,7 +31,7 @@ packages = ["thispackage"]
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.3.0",
+    "prek>=0.2.13",
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
     "ruff>=0.12.11",
