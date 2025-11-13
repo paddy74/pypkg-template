@@ -31,6 +31,7 @@ packages = ["thispackage"]
 
 [dependency-groups]
 dev = [
+    "basedpyright>=1.33.0",
     "prek>=0.2.13",
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
@@ -61,9 +62,24 @@ major_on_zero = true
 [tool.semantic_release.commit_parser_options]
 patch_tags = ["fix", "build", "perf"]
 
+[tool.basedpyright]
+include = ["thispackage", "tests", "mkdocs"]
+typeCheckingMode = "standard"
+
+venvPath = "."
+venv = ".venv"
+
+pythonVersion = "3.11"
+pythonPlatform = "All"
+
 [tool.ruff]
 line-length = 88
 target-version = "py311"
+
+[tool.ruff.lint]
+ignore = ["E203", "E501"]
+select = ["C", "E", "F", "I", "W", "B"]
+extend-select = ["UP"]  # pyupgrade
 
 [tool.pytest.ini_options]
 addopts = "-q"

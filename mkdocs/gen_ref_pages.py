@@ -3,7 +3,7 @@
 import logging
 from pathlib import Path, PurePosixPath
 
-import mkdocs_gen_files
+import mkdocs_gen_files  # pyright: ignore[reportMissingImports]
 
 logger = logging.getLogger(__name__)
 
