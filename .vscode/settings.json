@@ -28,12 +28,17 @@
 
   // code-spell-checker
   "cSpell.diagnosticLevel": "Hint",
-  "cSpell.ignorePaths": [".vscode"],
+  "cSpell.ignorePaths": ["uv.lock", ".vscode"],
+  "cSpell.allowCompoundWords": true,
   "cSpell.words": [
-    "prek",
+    "basedpyright",
+    "docstrings",
     "mkdocs",
     "mkdocstrings",
+    "prek",
+    "pydantic",
     "pyproject",
+    "pyupgrade",
     "thispackage",
     "docstrings",
     "basedpyright",
